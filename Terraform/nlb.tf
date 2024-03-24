@@ -43,7 +43,7 @@ resource "aws_lb_listener" "nlb_listner" {
 
 
 ####################################################################
-#               Network Load Balanacer Security group
+#               Network Load Balancer Security Group
 ####################################################################
 
 resource "aws_security_group" "sg_nlb" {
