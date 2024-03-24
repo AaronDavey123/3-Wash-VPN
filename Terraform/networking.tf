@@ -27,7 +27,7 @@ resource "aws_network_interface" "nif_vpc_3_pri" {
 ####################################################################
 #       Creating Internet Gateways || Attaching Internet Gateways                                  
 ####################################################################
-################### Interent Gateway VPC 1 #########################
+################### Internet Gateway VPC 1 #########################
 resource "aws_internet_gateway" "igw_vpc_1" {
   vpc_id = aws_vpc.vpc_1.id
 
@@ -36,7 +36,7 @@ resource "aws_internet_gateway" "igw_vpc_1" {
   }
 }
 
-################### Interent Gateway VPC 2 #########################
+################### Internet Gateway VPC 2 #########################
 
 resource "aws_internet_gateway" "igw_vpc_2" {
   vpc_id = aws_vpc.vpc_2.id
@@ -46,7 +46,7 @@ resource "aws_internet_gateway" "igw_vpc_2" {
   }
 }
 
-################### Interent Gateway VPC 3 #########################
+################### Internet Gateway VPC 3 #########################
 resource "aws_internet_gateway" "igw_vpc_3" {
   vpc_id = aws_vpc.vpc_3.id
 
@@ -73,7 +73,7 @@ resource "aws_nat_gateway" "nat_gw_vpc_1" {
 ####################################################################
 #                   Creating Elastic IP                                 
 ####################################################################
-################### Creatomg Elastic IP VPC 1  #####################
+################### Creating Elastic IP VPC 1  #####################
 
 resource "aws_eip" "eip_for_nat_gw" {
   depends_on = [aws_internet_gateway.igw_vpc_1]
@@ -84,7 +84,7 @@ resource "aws_eip" "eip_for_nat_gw" {
   }
 }
 
-################### Creatomg Elastic IP VPC 2  #####################
+################### Creating Elastic IP VPC 2  #####################
 
 resource "aws_eip" "eip_for_vpc_2_pri" {
   depends_on = [aws_internet_gateway.igw_vpc_2]
