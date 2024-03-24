@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket  = "hambro-3-tier-aws"
+    bucket  = ********
     encrypt = true
-    key     = "terraform.ftstate"
+    key     = ********
     region  = "us-east-1"
   }
 }
