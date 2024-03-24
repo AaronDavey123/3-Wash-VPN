@@ -56,7 +56,7 @@
 
 
 # ####################################################################
-# #                    Direct Conenction Gateway                
+# #                    Direct Connection Gateway                
 # ####################################################################
 # resource "aws_dx_gateway" "dx_gw" {
 #   name            = "ipsec_vpn"
