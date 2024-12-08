@@ -42,7 +42,6 @@ This architecture hides client routing by ensuring that traffic traverses multip
 
 3. **Routing & Tunneling**: WireGuard tunnels are established between each VPC for secure traffic flow.
 
-   ![Architecture](docs/architecture-diagram.png) <!-- Optional: Insert a network diagram here -->
 
 ## Prerequisites
 
